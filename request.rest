@@ -1,0 +1,34 @@
+
+
+### 
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+    "username" : "tvhung",
+    "email"  : "tvhung@test.com",
+    "password" : "abc123",
+    "confirmPassword" : "abc123"
+}
+
+### 
+POST http://localhost:3000/api/auth/signin
+Content-Type: application/json
+
+{
+    "email"  : "tvhung@test.com",
+    "password" : "abc123"
+}
+
+### 
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "caption" : "test caption !",
+    "imageUrl" : "https://images.pexels.com/photos/5262348/pexels-photo-5262348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "username" : "tvhung"
+}
+
+###
+GET http://localhost:3000/api/posts
